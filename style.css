@@ -1,0 +1,227 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.container {
+    background-color: #47B5FF;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.box {
+    background-color: #06283D;
+}
+
+/* DAY 1 */
+.day_1 .container {
+    background-color: #5D3A3A;
+}
+
+.day_1 .box {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    background-color: #B5E0BA;
+}
+
+/* DAY 2 */
+
+.day_2 .container { 
+    background-color: #62374E;
+}
+
+.day_2 .box {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background-color: #FDC57B;
+}
+
+.day_2 .box:nth-child(1) {
+    left: 25px;
+    top: 25px;
+}
+
+.day_2 .box:nth-child(2) {
+    right: 25px;
+    top: 25px;
+}
+
+.day_2 .box:nth-child(3) {
+    left: 25px;
+    bottom: 25px;
+}
+
+.day_2 .box:nth-child(4) {
+    right: 25px;
+    bottom: 25px;
+}
+
+/* DAY 3 */
+.day_3 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6592CF;
+}
+
+.day_3 .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day_3 .box {
+    height: 100px;
+    width: 200px;
+    background-color: #243D83;
+}
+
+.day_3 .outline_box {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 30px solid #6592CF;
+}
+
+.day_3 .inner_box {
+    height:35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #EEB850;
+}
+
+/* DAY 4 */
+
+.day_4 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #62306D;
+}
+
+.day_4 .box {
+    height: 75px;
+    width: 75px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: translateY(25px);
+    background-color: #F7EC7D;
+}
+
+.day_4 .box:nth-child(2) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translateY(-50px);
+}
+
+/* DAY 5 */
+
+.day_5 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B2429;
+}
+
+.day_5 .box {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-top-right-radius: 0px;
+    position: absolute;
+    background-color: #F3AC3C;
+}
+
+
+.day_5 .box:nth-child(1) {
+    left: 10%;
+    bottom: 10%;
+    z-index: 10;
+}
+
+.day_5 .box:nth-child(2) {
+    z-index: 5;
+    background-color: #998235;
+}
+
+.day_5 .box:nth-child(3) {
+    top: 10%;
+    right: 10%;
+    border-radius: 50%;
+}
+
+/* DAY 6 */
+
+.day_6 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3516E;
+}
+
+.day_6 .circle {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.day_6 .box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+.day_6 .box:nth-child(1) {
+    background-color: #51B5A9;
+}
+
+.day_6 .box:nth-child(2) {
+    background-color: #FADE8B;
+    right: 0;
+}
+
+.day_6 .box:nth-child(3) {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+/* DAY 7 */
+
+.day_7 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B2429;
+}
+
+.day_7 .box {
+    width: 100px;
+    height: 125px;
+    background-color: #000;
+    border-radius: 50% 0 50% 0;
+    position: absolute;
+}
+
+.day_7 .box:nth-child(1) {
+    left: 10%;
+    background-color: #1A4341;
+}
+
+.day_7 .box:nth-child(2) {
+    background-color: #998235;
+}
+
+
+.day_7 .box:nth-child(3) {
+    right: 10%;
+    background-color: #F3AC3C;
+}
